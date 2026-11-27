@@ -23,4 +23,12 @@ public class Player {
         app.fill(Color.rgb(255, 0, 0));
         app.rect(x, y, size, size);
     }
+
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
 }
