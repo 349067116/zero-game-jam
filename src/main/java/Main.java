@@ -18,17 +18,19 @@ public class Main extends GameApp {
     @Override public void update(double seconds) {
         int horizontal = 0;
         int vertical = 0;
+        int horizontal2 = 0;
+        int vertical2 = 0;
         if (keyDown(Key.A)) horizontal--;
         if (keyDown(Key.D)) horizontal++;
         if (keyDown(Key.W)) vertical--;
         if (keyDown(Key.S)) vertical++;
         player1.update(horizontal, vertical, seconds, width(), height());
 
-        if (keyDown(Key.LEFT)) horizontal--;
-        if (keyDown(Key.RIGHT)) horizontal++;
-        if (keyDown(Key.UP)) vertical--;
-        if (keyDown(Key.DOWN)) vertical++;
-        player2.update(horizontal, vertical, seconds, width(), height());
+        if (keyDown(Key.LEFT)) horizontal2--;
+        if (keyDown(Key.RIGHT)) horizontal2++;
+        if (keyDown(Key.UP)) vertical2--;
+        if (keyDown(Key.DOWN)) vertical2++;
+        player2.update(horizontal2, vertical2, seconds, width(), height());
     }
     @Override public void draw() {
         background(Color.rgb(240, 248, 255));
