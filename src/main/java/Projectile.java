@@ -13,7 +13,7 @@ public class Projectile {
         this.direction = direction;
     }
     public void update(double seconds) {
-        x += direction * speed * seconds
+        x += direction * speed * seconds;
     }
 
     public void draw(GameApp app) {

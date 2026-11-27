@@ -12,6 +12,7 @@ public enum Key {
     A(KeyCode.A),
     S(KeyCode.S),
     D(KeyCode.D),
+    L(KeyCode.L),
     SPACE(KeyCode.SPACE),
     ENTER(KeyCode.ENTER),
     ESCAPE(KeyCode.ESCAPE),
